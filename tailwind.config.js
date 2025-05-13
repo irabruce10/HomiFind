@@ -23,9 +23,9 @@ module.exports = {
         },
         black: {
           DEFAULT: '#000000',
-          100: '#000000',
+          100: '#8C8E98',
           200: '#666876',
-          300: '#191d31',
+          300: '#191D31',
         },
         white: {
           DEFAULT: '#FFFFFF', // pure white
