@@ -1,21 +1,13 @@
-import onboarding from "@/assets/images/onboarding.png";
-import avatar from "@/assets/images/avatar.png";
-import newYork from "@/assets/images/new-york.png";
-import japan from "@/assets/images/japan.png";
-import cardGradient from "@/assets/images/card-gradient.png";
-import barChart from "@/assets/images/bar-chart.png";
-import whiteGradient from "@/assets/images/white-gradient.png";
-import map from "@/assets/images/map.png";
-import noResult from "@/assets/images/no-result.png";
-
-export default {
-  onboarding,
-  avatar,
-  newYork,
-  japan,
-  cardGradient,
-  barChart,
-  whiteGradient,
-  map,
-  noResult,
+const images = {
+  onboarding: require('@/assets/images/onboarding.png'),
+  avatar: require('@/assets/images/avatar.png'),
+  newYork: require('@/assets/images/new-york.png'),
+  japan: require('@/assets/images/japan.png'),
+  cardGradient: require('@/assets/images/card-gradient.png'),
+  barChart: require('@/assets/images/bar-chart.png'),
+  whiteGradient: require('@/assets/images/white-gradient.png'),
+  map: require('@/assets/images/map.png'),
+  noResult: require('@/assets/images/no-result.png'),
 };
+
+export default images;
