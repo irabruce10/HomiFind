@@ -38,7 +38,7 @@ export async function login() {
   try {
     const redirectUri =
       Platform.OS === 'web'
-        ? `${window.location.origin}/auth/callback`
+        ? `${window.location.origin}/`
         : Linking.createURL('/');
 
     if (Platform.OS === 'web') {
