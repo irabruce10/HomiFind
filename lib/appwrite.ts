@@ -22,7 +22,8 @@ export const config = {
 };
 export const client = new Client();
 client
-  .setEndpoint(config.endpoint!)
+  // .setEndpoint(config.endpoint!)
+  .setEndpoint(process.env.EXPO_PUBLIC_APPWRITE_ENDPOINT!)
   .setProject(config.projectId!)
   .setPlatform(config.platform!);
 
