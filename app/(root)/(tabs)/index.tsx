@@ -7,11 +7,12 @@ import { getLatestProperties, getProperties } from '@/lib/appwrite';
 import { useGlobalContext } from '@/lib/provider';
 import { useAppwrite } from '@/lib/useAppwrite';
 import { router, useLocalSearchParams } from 'expo-router';
-import React, { useEffect } from 'react';
+import React, { useEffect, useMemo } from 'react';
 import {
   ActivityIndicator,
   FlatList,
   Image,
+  StatusBar,
   Text,
   TouchableOpacity,
   View,
@@ -21,6 +22,13 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 const index = () => {
   const { user } = useGlobalContext();
   const params = useLocalSearchParams<{ query?: string; filter?: string }>();
+  // Determine greeting based on local time
+  const greeting = useMemo(() => {
+    const hour = new Date().getHours();
+    if (hour < 12) return 'Morning';
+    if (hour < 18) return 'Afternoon';
+    return 'Evening';
+  }, []);
 
   const { data: latestProperties, loading: latestPropertiesLoading } =
     useAppwrite({ fn: getLatestProperties });
@@ -50,7 +58,8 @@ const index = () => {
   }, [params.query, params.filter]);
   return (
     <SafeAreaView className="bg-white-100 h-full">
-      {/* <Button title="Seed" onPress={seed} /> */}
+      <StatusBar backgroundColor="#000000" />
+
       <FlatList
         data={properties}
         renderItem={({ item }) => (
@@ -78,7 +87,7 @@ const index = () => {
                 />
                 <View className="flex flex-col items-start ml-2 justify-center">
                   <Text className="text-xs font-rubik text-black-100">
-                    Good Morning
+                    Good {greeting}
                   </Text>
                   <Text className="font-rubik-medium text-black-300">
                     {user?.name}

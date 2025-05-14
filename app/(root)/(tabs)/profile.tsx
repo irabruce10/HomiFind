@@ -8,7 +8,6 @@ import {
   Image,
   ImageSourcePropType,
   ScrollView,
-  StyleSheet,
   Text,
   TouchableOpacity,
   View,
@@ -105,5 +104,3 @@ const profile = () => {
 };
 
 export default profile;
-
-const styles = StyleSheet.create({});

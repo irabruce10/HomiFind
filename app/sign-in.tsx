@@ -3,7 +3,6 @@ import {
   Alert,
   Image,
   ScrollView,
-  StyleSheet,
   Text,
   TouchableOpacity,
   View,
@@ -69,5 +68,3 @@ const signIn = () => {
 };
 
 export default signIn;
-
-const styles = StyleSheet.create({});
