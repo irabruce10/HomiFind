@@ -1,5 +1,7 @@
 <div align="center">
- ![Descriptive alt text](./assets/images/2.png)
+
+![Descriptive alt text](assets/images/2.png)
+
   <div>
     <img src="https://img.shields.io/badge/-Expo-black?style=for-the-badge&logoColor=white&logo=expo&color=000020" alt="expo" />
     <img src="https://img.shields.io/badge/-TypeScript-black?style=for-the-badge&logoColor=white&logo=typescript&color=3178C6" alt="typescript" />
