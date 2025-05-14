@@ -1,0 +1,22 @@
+{
+  "buildCommand": "expo export -p web",
+  "outputDirectory": "dist",
+  "devCommand": "expo",
+  "cleanUrls": true,
+  "framework": null,
+  "rewrites": [
+    {
+      "source": "/:path*",
+      "destination": "/"
+    }
+  ],
+  "env": {
+    "EXPO_PUBLIC_APPWRITE_PROJECT_ID": "682334ce0000f8787dd0",
+    "EXPO_PUBLIC_APPWRITE_ENDPOINT": "https://fra.cloud.appwrite.io/v1",
+    "EXPO_PUBLIC_APPWRITE_DATABASE_ID": "68239193002a5f43d4cc",
+    "EXPO_PUBLIC_APPWRITE_AGENTS_COLLECTION_ID": "6823924d0023422f622f",
+    "EXPO_PUBLIC_APPWRITE_GALLERIES_COLLECTION_ID": "682393480009f77ed5b3",
+    "EXPO_PUBLIC_APPWRITE_REVIEWS_COLLECTION_ID": "682393e3001164adee70",
+    "EXPO_PUBLIC_APPWRITE_PROPERTIES_COLLECTION_ID": "682394bf002e8eabf095"
+  }
+}
