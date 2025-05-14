@@ -11,6 +11,7 @@ const index = () => {
   const { user } = useGlobalContext();
   return (
     <SafeAreaView className="bg-white-100 h-full">
+      {/* <Button title="Seed" onPress={seed} /> */}
       <FlatList
         data={[1, 2]}
         renderItem={({ item }) => <Card />}
