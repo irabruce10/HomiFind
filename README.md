@@ -1,8 +1,8 @@
 <div align="center">
   <br />
     
-     ![My Diagram](assets/images/2.png"Click to enlarge")
-
+     <img src="/assets/images/2.png" alt="expo" />
+    
   <br />
   <div>
     <img src="https://img.shields.io/badge/-Expo-black?style=for-the-badge&logoColor=white&logo=expo&color=000020" alt="expo" />
