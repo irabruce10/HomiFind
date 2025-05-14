@@ -1,5 +1,6 @@
 import * as Linking from 'expo-linking';
 import { openAuthSessionAsync } from 'expo-web-browser';
+import { Platform } from 'react-native';
 import {
   Account,
   Avatars,
@@ -35,7 +36,24 @@ export const databases = new Databases(client);
 
 export async function login() {
   try {
-    const redirectUri = Linking.createURL('/');
+    const redirectUri =
+      Platform.OS === 'web'
+        ? `${window.location.origin}/auth/callback`
+        : Linking.createURL('/');
+
+    if (Platform.OS === 'web') {
+      // Web flow: createOAuth2Session returns a URL string
+      const authUrl = await account.createOAuth2Session(
+        OAuthProvider.Google,
+        redirectUri,
+      );
+      // Redirect the browser
+      window.location.href = authUrl;
+      return true;
+    }
+    // const redirectUri = Linking.createURL('/');
+    // full browser redirect
+
     const response = await account.createOAuth2Token(
       OAuthProvider.Google,
       redirectUri,
