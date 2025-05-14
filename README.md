@@ -141,8 +141,7 @@ npm run reset-project
 
 ## 🔗 Web Preview
 
-Check out the live web version of HomiFind here:  
-https://homi-find.vercel.app/
+Check out the live web version of HomiFind here: [`HomiFind`](https://homi-find.vercel.app/)
 
 > Please note that the link above points to the **web preview** of HomiFind, which does not yet match the native mobile app’s styling and performance one-to-one. While all core features—Google sign-in, property browsing, and profile management—are functional, the UI layout and device-specific touch interactions differ from the Expo-built mobile experience. We’re actively refining the responsive design, animations, and data caching to bring the web version closer to the polished feel of our iOS and Android builds. Thank you for your understanding, and stay tuned for updates!
 
