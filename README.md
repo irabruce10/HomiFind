@@ -139,18 +139,11 @@ When you're ready, run:
 npm run reset-project
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+## 🔗 Web Preview
 
-## Learn more
+Check out the live web version of HomiFind here:  
+https://homi-find.vercel.app/
 
-To learn more about developing your project with Expo, look at the following resources:
+> Please note that the link above points to the **web preview** of HomiFind, which does not yet match the native mobile app’s styling and performance one-to-one. While all core features—Google sign-in, property browsing, and profile management—are functional, the UI layout and device-specific touch interactions differ from the Expo-built mobile experience. We’re actively refining the responsive design, animations, and data caching to bring the web version closer to the polished feel of our iOS and Android builds. Thank you for your understanding, and stay tuned for updates!
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+Built with ❤️.
