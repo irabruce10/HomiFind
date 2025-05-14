@@ -46,15 +46,17 @@ const SettingsItem = ({
 );
 const profile = () => {
   const { user, refetch } = useGlobalContext();
+
   const handleLogout = async () => {
     const result = await logout();
-    if (result) {
+    if (result!) {
       Alert.alert('Success', 'Logout successful');
       refetch();
     } else {
       Alert.alert('Error', 'Logout failed');
     }
   };
+
   return (
     <SafeAreaView className="h-full bg-white-soft">
       <ScrollView
