@@ -23,9 +23,11 @@ export const config = {
 export const client = new Client();
 client
   // .setEndpoint(config.endpoint!)
+  //.setProject(config.projectId!)
+  //.setPlatform(config.platform!);
   .setEndpoint(process.env.EXPO_PUBLIC_APPWRITE_ENDPOINT!)
-  .setProject(config.projectId!)
-  .setPlatform(config.platform!);
+  .setProject(process.env.EXPO_PUBLIC_APPWRITE_PROJECT_ID!)
+  .setPlatform('com.bruce.homifind');
 
 export const avatar = new Avatars(client);
 export const account = new Account(client);
